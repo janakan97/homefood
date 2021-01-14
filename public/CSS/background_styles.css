@@ -315,7 +315,7 @@ align-items: center;
 
 .background-container{
     margin: 0 5px 0px 5px;
-    height: 1000px;
+    height: 100px;
 }
 .poi-style{
     display: block;
@@ -328,10 +328,10 @@ align-items: center;
 .view-button{
  
     display: inline !important;
-    font-size: 10px !important;
-    background-color: transparent !important;
-    border: 2px solid #5BD4F6 !important;
-    color: #5BD4F6 !important;
+    font-size: 20px !important;
+
+    background-color: #81ABBC !important;
+    color: #FFFFFF; 
     font-weight: bold !important;
 }
 
