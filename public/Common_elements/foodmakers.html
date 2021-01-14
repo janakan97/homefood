@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-
+    <script src="../script/qrCodeScanner.js"></script>
+    <script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js"></script>
     <script>
       $(document).ready(function() {
         $('a').click(function(e) {
@@ -39,26 +40,29 @@
 <body>
   <!--Start of POI 1-->
   <div class="poi-style" data-name="1">
-    <img style="border-radius:60%; height:70px; width: 70px;margin-top: 15px;margin-left: 10px;" src="../images/icon-map-1.jpg">
-    <p style="display: inline; font-weight: bold;position: relative;top: -15px;left: 3px;font-size: 14px;" class="poi_text">Anne Shirly</p>
-    <div style="display: inline;border: 2px solid #FFEB38;padding: 1px;border-radius: 10px;background-color: black;color: white;position: relative;top: -16px;left: 4px;">
-      <img src="../images/star.png" alt="" style="width: 45px;margin-left: -13px;margin-bottom: 4px;padding: 5px;">
-      <p style="display: inline;margin-left: -20px;padding: 3px;position: relative;font-size: 10px;top: -3px;margin-right: 2px;">3.5</p>
+    <img style="border-radius:0%; height:150px; width: 150px;margin-top: 15px;margin-left: 200px;" src="../images/sarah.jpeg">
+    <p style="display: inline; font-weight: bold;position: relative;top: -55px;left: 30px;font-size: 16px;color:#ffffff" class="poi_text">Sarah's Fast Food</p>
+    <p style="display: inline; font-weight: bold;position: relative;top: -30px;left: -95px;font-size: 16px;color:#ffffff" class="poi_text">Restaurant</p>
+    <div style="position: relative;top: -160px;left: 45px;">
+    <img src="../images/heart.svg" alt="" style="width: 45px;margin-left: -13px;margin-bottom: 4px;padding: 5px;">
     </div>
-    <div style="position: relative;top: -85px;left: 245px;">
+    <div style="position: relative;top: -5px;left: 245px;">
       <button class="view-button">VIEW</button>
-      <button class="book-button">BOOK</button>
     </div>
-    <p style="font-size: 11px;position: relative;top: -95px;left: 89px;">No: 116, School Lane, California, USA</p>
-    <div style="top: -95px;position: relative;background-color: #0159A0;color: white;font-size: 7px;border: 1px solid #0159A0;width: 110px;text-align: center;left: 89px;padding: 3px;" class="price_array">
-      <p style="display: inline;margin-right: 10px;">Dog Walking</p>
-      <p style="display: inline;" class="price_text">$ 10.00/hr</p>
-    </div>
-    <div style="display: inline;position: relative;top: -118px;left: 205px;"><img src="../images/dog_image.png" alt="" style="width: 25px;"></div>
-    <div style="position: relative;top: -165px;left: 120px;">
-      <button style="background-color: transparent;border: none;box-shadow: none;display: inline;position: relative;top: 2px;"><img src="../images/phone-call.svg" alt="" style="width: 30px;"></button>
-      <button style="background-color: transparent;border: none;box-shadow: none;display: inline;position: relative;top: -65px;left: 38px;"><img src="../images/chat.svg" alt="" style="width: 30px;"></button>
-    </div>
+    <div style="position: relative;top: -45px;left: 45px;">
+        <a id="btn-scan-qr">
+            <img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/07/1499401426qr_icon.svg" alt="" style="width: 55px;margin-left: -13px;margin-bottom: 4px;padding: 5px;">
+          <a/>
+            <canvas hidden="" id="qr-canvas"></canvas>
+      
+            <div id="qr-result" hidden="">
+              <b>Data:</b> <span id="outputData"></span>
+            </div>
+          </div>
+      
+        
+      </div>
+    
   </div>
   <!--End of POI 1-->
 
