@@ -70,15 +70,15 @@ body{
     margin-bottom: 10px;
 }
 
-/*
+
 .view-button{
-    width: 55px !important;
+   
     display: inline !important;
-    height: 30px !important;
+    font-style: normal;
     font-size: 10px !important;
     background-color: transparent !important;
     border: 2px solid #5BD4F6 !important;
-    color: #5BD4F6 !important;
+    color: rgb(14, 15, 15) !important;
     font-weight: bold !important;
 }
 /*
