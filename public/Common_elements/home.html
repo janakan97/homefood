@@ -27,7 +27,12 @@
       }); 
       -->
 
+      <script>
+        $(document).on('click', '#foodmakers-btn', function (e) {
+           window.location.href = 'https://home-food-7c8cc.web.app//Common_elements/foodmakers.html';
+        });
       
+      </script>
 
     </script> 
 </head>
@@ -52,9 +57,9 @@
         
         <div class="overlay-content">
           <a href="#">Login / Sign Up</a>
-          <a href="https://home-food-7c8cc.web.app/Common_elements/foodmakers.html" target="_self">
+          <button id="foodmakers-btn">
             <div> Food Makers  </div> 
-          </a>
+        </button>
          <a href="#">Contact Us</a>
         </div>
       </div>
