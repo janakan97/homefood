@@ -7,6 +7,8 @@
     
     <!-- the three things that jQuery Mobile needs to work -->
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <link rel="stylesheet" href="../CSS/button_styles.css" />
     <link rel="stylesheet" href="../CSS/background_styles.css" />
     <link rel="stylesheet" href="../CSS/progressbar.css">
@@ -14,8 +16,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <script src="https://home-food-7c8cc.web.app/script/qrCodeScanner.js"></script>
-    <script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js"></script>
+   
     <script>
       $(document).ready(function() {
         $('a').click(function(e) {
@@ -45,14 +46,10 @@
       <button >VIEW</button>
   </div>
   <div style="position: relative;top: -45px;left: 45px;">
-        <a id="btn-scan-qr">
-            <img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/07/1499401426qr_icon.svg" alt="" style="width: 55px;margin-left: -13px;margin-bottom: 4px;padding: 5px;">
-          <a/>
-            <canvas hidden="" id="qr-canvas"></canvas>
-      
-            <div id="qr-result" hidden="">
-              <b>Data:</b> <span id="outputData"></span>
-            </div>
+     <div role="main" class="ui-content">
+			<a href="https://home-food-7c8cc.web.app/Common_elements/ARpage_box.html" rel="external"><img src="images/scan.jpg"></a>
+
+		</div>
          
     
  
