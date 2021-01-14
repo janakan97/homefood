@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- head section which contains meta data -->
+<head>
+    <meta charset="utf-8">
+    <title>Home Food</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- the three things that jQuery Mobile needs to work -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="../CSS/button_styles.css" />
+    <link rel="stylesheet" href="../CSS/background_styles.css" />
+    <link rel="stylesheet" href="../CSS/progressbar.css">
+    <link rel="stylesheet" href="../themes/blue_test.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $('a').click(function(e) {
+          e.preventDefault();
+          $('#content').load($(this).attr('href'));
+          var header_text = e.target.name;
+          $('#headerText').html(header_text);
+        })
+      });
+
+      
+
+    </script>
+
+<script>
+    $('#booking_btn').click(function(){
+     window.location.href='https://pet-temp-host.web.app/Common_elements/ordering.html';
+  })
+  </script>
+</head>
+
+<body>
+  <!--Start of POI 1-->
+  <div class="poi-style" data-name="1">
+    <img style="border-radius:60%; height:70px; width: 70px;margin-top: 15px;margin-left: 10px;" src="../images/icon-map-1.jpg">
+    <p style="display: inline; font-weight: bold;position: relative;top: -15px;left: 3px;font-size: 14px;" class="poi_text">Anne Shirly</p>
+    <div style="display: inline;border: 2px solid #FFEB38;padding: 1px;border-radius: 10px;background-color: black;color: white;position: relative;top: -16px;left: 4px;">
+      <img src="../images/star.png" alt="" style="width: 45px;margin-left: -13px;margin-bottom: 4px;padding: 5px;">
+      <p style="display: inline;margin-left: -20px;padding: 3px;position: relative;font-size: 10px;top: -3px;margin-right: 2px;">3.5</p>
+    </div>
+    <div style="position: relative;top: -85px;left: 245px;">
+      <button class="view-button">VIEW</button>
+      <button class="book-button">BOOK</button>
+    </div>
+    <p style="font-size: 11px;position: relative;top: -95px;left: 89px;">No: 116, School Lane, California, USA</p>
+    <div style="top: -95px;position: relative;background-color: #0159A0;color: white;font-size: 7px;border: 1px solid #0159A0;width: 110px;text-align: center;left: 89px;padding: 3px;" class="price_array">
+      <p style="display: inline;margin-right: 10px;">Dog Walking</p>
+      <p style="display: inline;" class="price_text">$ 10.00/hr</p>
+    </div>
+    <div style="display: inline;position: relative;top: -118px;left: 205px;"><img src="../images/dog_image.png" alt="" style="width: 25px;"></div>
+    <div style="position: relative;top: -165px;left: 120px;">
+      <button style="background-color: transparent;border: none;box-shadow: none;display: inline;position: relative;top: 2px;"><img src="../images/phone-call.svg" alt="" style="width: 30px;"></button>
+      <button style="background-color: transparent;border: none;box-shadow: none;display: inline;position: relative;top: -65px;left: 38px;"><img src="../images/chat.svg" alt="" style="width: 30px;"></button>
+    </div>
+  </div>
+  <!--End of POI 1-->
+
+</body>
+</html>
