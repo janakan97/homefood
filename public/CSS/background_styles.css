@@ -72,8 +72,7 @@ body{
 
 
 .view-button{
-   
-    display: inline !important;
+    width: 10px;
     font-style: normal;
     font-size: 10px !important;
     background-color: transparent !important;
