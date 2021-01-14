@@ -14,28 +14,48 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-
-    <script>
-      $(document).ready(function() {
-        $('a').click(function(e) {
-          e.preventDefault();
-          $('#content').load($(this).attr('href'));
-          var header_text = e.target.name;
-          $('#headerText').html(header_text);
-        })
-      });
-
+    <style>
+      body, html {
+        height: 100%;
+        margin: 0;
+      }
       
-
-    </script>
+      .bg {
+        /* The image used */
+        background-image: url("../public/images/background.png");
+      
+        /* Full height */
+        height: 100%; 
+      
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      </style>
+    
+      
+     
+  
+   
 </head>
 <!-- End of head -->
+<script>
+  $(document).on('click', '#welcome-btn', function (e) {
+     window.location.href = 'https://pet-temp-host.web.app/Common_elements/userGuide.html';
+  });
+
+</script>
 
 <body>
+      
+        
+     
+  
+    <button id="welcome-btn" style="background-color: #FF8139;width: 200px;height: 50px;position: relative;top: -80px;left: 155px;">GET STARTED <img src="images/icons8-double-right-48.png" alt="" style="width: 30px;margin-left: 15px;"></button>
 
-  <a name="logo" href="../public/Common_elements/foodmakers.html" alt="logo1" target="_self" >
-      <img src="../public/images/logo.png" >
-  </a>
+
+
 
 
 
