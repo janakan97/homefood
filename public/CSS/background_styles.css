@@ -334,6 +334,25 @@ align-items: center;
     font-weight: bold !important;
 }
 
+.comment-button{
+    width: 5px;
+    display: inline !important;
+    font-size: 20px !important;
+    background-color: #81ABBC !important;
+    color: #FFFFFF; 
+    font-weight: bold !important;
+}
+
+.post-button{
+    width: 50px;
+    display: inline !important;
+    font-size: 20px !important;
+    background-color: #0C124E !important;
+    color: #FFFFFF; 
+    font-weight: bold !important;
+    align-items: center;
+}
+
 .book-button{
     display: inline !important;
     font-size: 10px !important;

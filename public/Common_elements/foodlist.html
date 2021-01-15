@@ -28,7 +28,15 @@
       });
     </script>
 
-
+<script>
+    $(document).on('click', '#comment-btn', function (e) {
+       window.location.href = 'https://home-food-7c8cc.web.app//Common_elements/comments.html';
+    });
+    $(document).on('click', '#addtoCart-btn', function (e) {
+       window.location.href = 'https://home-food-7c8cc.web.app//Common_elements/addtoCart.html';
+    });
+  
+  </script>
 </head>
 
 <body>
@@ -75,7 +83,11 @@
 
 </div>
 <!-- End of header -->
+</br>
+</br>
 <div class="background-container" >
+
+
 
 
   <!--Start of POI 1-->
@@ -83,13 +95,23 @@
   
     <img style="border-radius:0%; height:150px; width: 150px;margin-top: 15px;margin-left: 200px;" src="../images/cheese.jpg">
     <p style="display: inline; font-weight: bold;position: relative;top: -55px;left: 30px;font-size: 16px;color:#ffffff" class="poi_text"> Cheese Pizza</p>
-    <p style="display: inline; font-weight: bold;position: relative;top: -30px;left: -95px;font-size: 16px;color:#ffffff;" class="poi_text">Rich tomato sauce</br> with a triple layer </br>of mozeralla cheese</p>
+    <p style="display: inline; font-weight: bold;position: relative;top: -30px;left: -95px;font-size: 13px;color:#ffffff;" class="poi_text">Rich tomato sauce <br>  with  a triple layer of mozeralla cheese</p>
   
 
   <div style="position: relative;top: -160px;left: 45px;">
-    <button class="view-button" id="comment-btn" ><div style="font-size: 16px;color:#ffffff">Comments</div></button>
+    <button style="width: 125px;
+    height: 45px;
+    color: #ffffff;
+    display: inline;
+    background-color: #81ABBC !important;
+    float: left;
+    position: relative;top: -25px;left: -15px;
+    margin-right: 5px;"  id="comment-btn" ><div style="font-size: 16px;color:#ffffff;">Comments</button>
   </div>
-  <div style="position: relative;top: -5px;left: 200px;width: 125px;">
+  <div style="position: relative;top: -45px;left: 30px;width: 125px;">
+    <button class="view-button" id="addtoCart-btn" ><div style="font-size: 16px;color:#ffffff">Post a comment</div></button>
+  </div>
+  <div style="position: relative;top: -105px;left: 200px;width: 125px;">
     <button class="view-button" id="addtoCart-btn" ><div style="font-size: 16px;color:#ffffff">Add to Cart</div></button>
   </div>
  

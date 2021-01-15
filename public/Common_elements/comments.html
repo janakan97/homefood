@@ -2,7 +2,7 @@
 <!-- head section which contains meta data -->
 <head>
     <meta charset="utf-8">
-    <title>Canoodle</title>
+    <title>Home Food</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- the three things that jQuery Mobile needs to work -->
@@ -32,20 +32,130 @@
 <!-- End of head -->
 
 <body>
-  <!-- start of the header section -->
-  <div data-role="header" data-theme="a" data-fullscreen="true">
-      <a data-rel="back" class="ui-btn ui-icon-arrow-l ui-btn-icon-left"> </a>
-      <h1 id="headerText">B O O K/h1>
-      
+  <div class="header"  >
+    <!-- <a data-rel="back" class="ui-btn ui-icon-arrow-l ui-btn-icon-left"> </a> -->
+    <div class="heading">
+    <h1 id="headerText" style="color:white" text-align="center"><b>Comments</b></h1>
   </div>
-  <!-- End of header -->
 
-  <!-- start of the content. Dynamically load your component here with footer navigation -->
-  <div role="main" class="ui-content" id="content">
+    <div class = logo>
+      <img id="logo" src="https://home-food-7c8cc.web.app/images/logo.png" alt="logo.png" width="75" height="75" title="Mystery"/>
+    </div>
+
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       
+      <div class="overlay-content">
+        <a href="#">Login / Sign Up</a>
+        <a href="https://home-food-7c8cc.web.app/Common_elements/foodmakers.html" target="_self">
+          <div> Food Makers  </div> 
+        </a>
+       <a href="#">Contact Us</a>
+      </div>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+   
+
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      
+      </script>
+  
+
+
      
-  </div>
-    <!-- End of content -->
+
+
+</div>
+<!-- End of header -->
+</br>
+</br>
+ 
+
+
+	<center>
+    <table width="100%" border="4" id="show">
+			<thead>
+				<tr>
+					<th> Name</th>
+					<th> Comments</th>
+					
+				</tr>
+      </thead>
+      <tbody>
+<tr>
+  <td>Anne</td>
+  <td>Tasty</td>
+</tr>
+
+      </tbody>
+    </table>
+    <br>
+    <br>
+    <br>
+
+		<table width="100%" border="4">
+			<tbody>
+
+				<tr>
+					<th>Name</th>
+					<td><input type="text" name="name" id="Name"></td>
+        </tr>
+        <tr>
+					<th>Comment</th>
+					<td><input type="text" name="comment" id="Comments"></td>
+        </tr>
+      
+    
+				<tr class="post-button">
+					<td colspan="2"><input type="button" name="button"  value="POST" onclick="AddRow()"></td>
+				</tr>
+			</tbody>
+		</table>
+
+
+	</center>
+	
+	<script>
+		
+		var list1 = [];
+		var list2 = [];
+
+
+		var n = 1;
+		var x = 0;
+
+		function AddRow(){
+
+			var AddRown = document.getElementById('show');
+			var NewRow = AddRown.insertRow(n);
+
+			list1[x] = document.getElementById("Name").value;
+			list2[x] = document.getElementById("Comments").value;
+		
+			var cel1 = NewRow.insertCell(0);
+			var cel2 = NewRow.insertCell(1);
+
+
+			cel1.innerHTML = list1[x];
+			cel2.innerHTML = list2[x];
+	
+
+			n++;
+			x++;
+		}
+
+	</script>
+
+ 
+   
 
   <!-- start of the footer section -->
 <div data-role="footer" class="footer-style">
