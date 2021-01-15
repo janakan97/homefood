@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- head section which contains meta data -->
+<head>
+    <meta charset="utf-8">
+    <title>Home Food</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- the three things that jQuery Mobile needs to work -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="https://home-food-7c8cc.web.app/CSS/button_styles.css" />
+    <link rel="stylesheet" href="https://home-food-7c8cc.web.app/CSS/background_styles.css" />
+    <link rel="stylesheet" href="https://home-food-7c8cc.web.app/CSS/progressbar.css">
+    <link rel="stylesheet" href="https://home-food-7c8cc.web.app/CSS/foodmakers.css">
+    <link rel="stylesheet" href="https://home-food-7c8cc.web.app/CSS/footer.css">
+    <link rel="stylesheet" href="https://home-food-7c8cc.web.app/themes/blue_test.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+   
+  <!-- <script>
+      $(document).ready(function() {
+        $('a').click(function(e) {
+          e.preventDefault();
+          $('#content').load($(this).attr('href'));
+          var header_text = e.target.name;
+          $('#headerText').html(header_text);
+        })
+      });
+    </script>  -->
+
+    <script>
+      $(document).on('click', '#view-btn', function (e) {
+         window.location.href = 'https://home-food-7c8cc.web.app//Common_elements/foodlist.html';
+      });
+    
+    </script>
+</head>
+
+<body>
+  <!-- start of header -->
+  <div class="header"  >
+    <!-- <a data-rel="back" class="ui-btn ui-icon-arrow-l ui-btn-icon-left"> </a> -->
+    <div class="heading">
+    <h1 id="headerText" style="color:white " text-align="center"><b>Food Makers</b></h1>
+  </div>
+
+    <div class = logo>
+      <img id="logo" src="https://home-food-7c8cc.web.app/images/logo.png" alt="logo.png" width="75" height="75" title="Mystery"/>
+    </div>
+
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+      <div class="overlay-content">
+       <a href="">
+        <button   onclick="window.location='https://home-food-7c8cc.web.app/Common_elements/contactUs.html'" >
+        Contact Us
+        </button> 
+      </a>
+      <a href="">
+        <button   onclick="window.location='https://home-food-7c8cc.web.app/Common_elements/home.html'" >
+        Logout 
+        </button> 
+      </a>
+      </div>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+   
+
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      
+      </script>
+</div>
+<!-- End of header -->
+</br>
+</br>
+<div class="background-container" >
+
+  <div style="font-size: 9px; margin-top: 10px;">
+      <button  class="foodmaker_btn"  style="width: 125px;height: 45px;display: inline;background-color: #0C124E !important;position: relative;top: -3px;left: 95px;color: #ffffff;margin-right: 5px;">
+       <img src="../images/search.svg" alt="" style="width: 13px;margin-right: 10px;position: relative;top: -1px;"> SEARCH
+      </button>
+      <button style="width: 125px;height: 45px;color: #ffffff;display: inline;background-color: #0C124E !important;float: left;position: relative;top: -3px;left: 35px;margin-right: 5px;">
+        <img src="../images/dropdown.svg" alt="" style="width: 14px;margin-right: 10px;position: relative;top: -1px;"> Filter By
+      </button>
+  </div>
+    <!--Start of POI 1-->
+    <div style=" display: block;width: 375px;border-radius: 10px 10px 10px 10px;height: 320px;background-color: #0C124E; margin-bottom: 10px;" data-name="1">
+  
+      <img style="border-radius:0%; height:150px; width: 150px;margin-top: 15px;margin-left: 200px;" src="../images/sarah.jpeg">
+      <p style="display: inline; font-weight: bold;position: relative;top: -55px;left: 30px;font-size: 16px;color:#ffffff" class="poi_text">Sarah's Fast Food</p>
+      <p style="display: inline; font-weight: bold;position: relative;top: -30px;left: -95px;font-size: 16px;color:#ffffff;" class="poi_text">Restaurant</p>
+    
+  
+      <div style="position: relative;top: -230px;left: 25px;width: 15px;height: 15px;">
+        <div class = btn-heart>
+          <button>♡</button>
+        </div>
+      </div>
+      <div style="position: relative;top: -5px;left: 200px;width: 125px;">
+       <button  class="view-button" onclick="window.location='https://home-food-7c8cc.web.app//Common_elements/loginsignup.html'" ><div style="font-size: 16px;color:#ffffff">VIEW</div></button>
+      </div>
+      <div style="position: relative;top: -45px;left: 45px;">
+       <div role="main" class="ui-content">
+        <a href="" target="_self">
+          <button   onclick="window.location='https://home-food-7c8cc.web.app/Common_elements/ARpage_box.html'" >
+          <img src="../images/QR.jpeg"  alt="QRcode" style="width:42px;height:42px;" >
+          </div>
+        </a>
+      </div>
+   
+    </div>
+</div>
+  
+    <!--End of POI 1-->
+
+<script>
+
+
+
+const whiteHeart = '\u2661';
+const blackHeart = '\u2665';
+const button = document.querySelector('button');
+button.addEventListener('click', toggle);
+
+function toggle() {
+  const like = button.textContent;
+  if(like==whiteHeart) {
+    button.textContent = blackHeart;
+  } else {
+    button.textContent = whiteHeart;
+  }
+}
+
+</script>
+
+
+</body>
+</html>
