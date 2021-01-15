@@ -32,13 +32,7 @@
       
 
     </script>
-       <script>
-        $(document).on('click', '#reply-btn', function (e) {
-           window.location.href = 'https://home-food-7c8cc.web.app//Common_elements/reply.html';
-        });
-       
       
-      </script>
 </head>
 <!-- End of head -->
 
@@ -46,7 +40,7 @@
   <div class="header"  >
     <!-- <a data-rel="back" class="ui-btn ui-icon-arrow-l ui-btn-icon-left"> </a> -->
     <div class="heading">
-    <h1 id="headerText" style="color:white" text-align="center"><b>Comments</b></h1>
+    <h1 id="headerText" style="color:white" text-align="center"><b>Reply</b></h1>
   </div>
 
     <div class = logo>
@@ -95,15 +89,16 @@
     <table width="100%" border="4" id="show">
 			<thead>
 				<tr>
-					<th> Name</th>
-					<th> Comments</th>
-					
+					<th> From</th>
+					<th> To</th>
+          <th> Reply</th>
 				</tr>
       </thead>
       <tbody>
      
+        <td>Kapa</td>
         <td>Anne</td>
-        <td>Tasty</td>
+        <td>Thankyou</td>
         </tr>
       </tbody>
     </table>
@@ -115,22 +110,24 @@
 			<tbody>
 
 				<tr>
-					<th>Name</th>
-					<td><input type="text" name="name" id="Name"></td>
+					<th>From</th>
+					<td><input type="text" name="from" id="From"></td>
         </tr>
         <tr>
-					<th>Comment</th>
-        <div style="font-size: 16px;color:#ffffff"><td><input type="text" name="comment" id="Comments"></td>
+					<th>To</th>
+					<td><input type="text" name="to" id="To"></td>
+        </tr>
+        <tr>
+					<th>Reply</th>
+					<td><input type="text" name="reply" id="Reply"></td>
         </tr>
       
     
-				<tr class="comment-button">
-					<td colspan="2"><input type="button" name="button"  value="POST" onclick="AddRow()"></td>
+				<tr class="reply-button">
+					<td colspan="2"><input type="button" name="button"  value="REPLY" onclick="AddRow()"></td>
         </tr>
         
-        <tr class="comment-button">
-					<td colspan="2"><input type="button" name="button"  value="REPLY" id="reply-btn"></td>
-				</tr>
+        
 			</tbody>
 		</table>
 
@@ -140,7 +137,8 @@
 	<script>
 		
 		var list1 = [];
-		var list2 = [];
+    var list2 = [];
+    var list3 = [];
 
 
 		var n = 1;
@@ -151,15 +149,18 @@
 			var AddRown = document.getElementById('show');
 			var NewRow = AddRown.insertRow(n);
 
-			list1[x] = document.getElementById("Name").value;
-			list2[x] = document.getElementById("Comments").value;
+			list1[x] = document.getElementById("From").value;
+      list2[x] = document.getElementById("To").value;
+      list3[x] = document.getElementById("Reply").value;
 		
 			var cel1 = NewRow.insertCell(0);
-			var cel2 = NewRow.insertCell(1);
+      var cel2 = NewRow.insertCell(1);
+      var cel3 = NewRow.insertCell(2);
      
 
 			cel1.innerHTML = list1[x];
-			cel2.innerHTML = list2[x];
+      cel2.innerHTML = list2[x];
+      cel3.innerHTML = list3[x];
 	
 
 			n++;
