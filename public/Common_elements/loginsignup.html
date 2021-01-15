@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- head section which contains meta data -->
+<head>
+    <meta charset="utf-8">
+    <title>Home Food</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- the three things that jQuery Mobile needs to work -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="../CSS/button_styles.css" />
+    <link rel="stylesheet" href="../CSS/background_styles.css" />
+    <link rel="stylesheet" href="../CSS/progressbar.css">
+    <link rel="stylesheet" href="../CSS/checkout.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../themes/blue_test.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    
+    <!-- <script>
+      $(document).ready(function() {
+        $('a').click(function(e) {
+          e.preventDefault();
+          $('#content').load($(this).attr('href'));
+          var header_text = e.target.name;
+          $('#headerText').html(header_text);
+        })
+      });
+
+      
+
+    </script> -->
+</head>
+<!-- End of head -->
+
+<body>
+  <!-- start of the header section -->
+  <!-- data-theme="a" data-fullscreen="true" -->
+  <div class="header"  >
+      <!-- <a data-rel="back" class="ui-btn ui-icon-arrow-l ui-btn-icon-left"> </a> -->
+      <div class="heading">
+      <h1 id="headerText" style="color:white" text-align="center"><b>Login  </b></h1>
+    </div>
+
+      <div class = logo>
+        <img id="logo" src="../images/dog_bath.png" alt="logo.png" width="75" height="75" title="Mystery"/>
+      </div>
+
+
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+        <div class="overlay-content">
+          <a href="#">Home</a>
+          <a href="#">Food Makers</a>
+
+         <a href="#">Contact Us</a>
+        </div>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+     
+
+      <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+        
+        </script>
+    
+
+
+       
+
+
+  </div>
+  <!-- End of header -->
+
+  <!-- start of the content. Dynamically load your component here with footer navigation -->
+ 
+    <div class = "intro">
+     <p style="color:#0C124E" font-family="Verdana"> <b>Have a Happy Meal</b> </p>
+    </div>
+
+    <div class = "person">
+        <img id="person" src="../images/dog_bath.png" alt="person.png" width="75" height="75" title="Mystery"/>
+    </div>
+<div class="form">
+    <form>
+      <table>
+          <tr>
+              <td> <i class="material-icons nav_icon">person</i></td>
+              <td><input type="username" id="username" name="username" placeholder="User Name" style="width: 95%;"><br><br></td>
+          </tr>
+
+          <br><br>
+
+          <tr>
+            <td> <i class="material-icons nav_icon">vpn_key</i></td>
+            <td><input type="password" id="password" name="password" placeholder="Password" style="width: 95%;"><br><br></td>
+        </tr>
+
+      </table>
+  
+            
+<div class="btn-login">
+            <input type="submit" value="Login">
+        </div>
+          
+    </form>
+
+    <p> Create New Account - S I G N   U P</p>
+
+    <table>
+        <th>
+            <td>Sign Up Using </td>
+            <td> <i class="material-icons nav_icon">email</i></td>
+            <td> <i class="material-icons nav_icon">facebook</i></td>
+        </th>
+    </table>
+
+    <div class="btn-customer">
+        <input type="submit" value="Customer">
+    </div>
+
+    <div class="btn-foodmaker">
+        <input type="submit" value="Food Maker">
+    </div>
+</div>
+    <!-- End of content -->
+
+  <!-- start of the footer section -->
+  <nav class="nav">
+
+
+<a href="#" class="nav__link">
+    <i class="material-icons nav_icon">home</i>
+    <span class="nav__text"></span>
+</a>
+
+<a href="#" class="nav__link nav__link--active">
+    <i class="material-icons nav_icon">shopping_cart</i>
+    <span class="nav__text"></span>
+</a>
+
+<a href="#" class="nav__link">
+    <i class="material-icons nav_icon">person</i>
+    <span class="nav__text"></span>
+</a>
+  </nav>
+<!-- End of footer -->
+
+</body>
+
+
+
+</html>
