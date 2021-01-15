@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- head section which contains meta data -->
+<head>
+    <meta charset="utf-8">
+    <title>Home Food</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- the three things that jQuery Mobile needs to work -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="https://home-food-7c8cc.web.app/CSS/background_styles.css" />
+    <link rel="stylesheet" href="https://home-food-7c8cc.web.app/CSS/progressbar.css">
+    <link rel="stylesheet" href="https://home-food-7c8cc.web.app/CSS/foodmakers.css">
+    <link rel="stylesheet" href="https://home-food-7c8cc.web.app/CSS/footer.css">
+    <link rel="stylesheet" href="https://home-food-7c8cc.web.app/themes/blue_test.css" />
+  
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    
+    <!-- <script>
+      $(document).ready(function() {
+        $('a').click(function(e) {
+          e.preventDefault();
+          $('#content').load($(this).attr('href'));
+          var header_text = e.target.name;
+          $('#headerText').html(header_text);
+        })
+      });
+
+      
+
+    </script> -->
+</head>
+<!-- End of head -->
+
+<body>
+  <!-- start of the header section -->
+  <!-- data-theme="a" data-fullscreen="true" -->
+  <div class="header"  >
+      <!-- <a data-rel="back" class="ui-btn ui-icon-arrow-l ui-btn-icon-left"> </a> -->
+      <div class="heading">
+      <h1 id="headerText" style="color:white" text-align="center"><b>Checkout </b></h1>
+    </div>
+
+      <div class = logo>
+        <img id="logo" src="../images/dog_bath.png" alt="logo.png" width="75" height="75" title="Mystery"/>
+      </div>
+
+
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+        <div class="overlay-content">
+          <a href="#">Contact Us</a>
+          <a href="#">Logout</a>
+         <!-- <a href="#">Contact Us</a> -->
+        </div>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+     
+
+      <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+        
+        </script>
+    
+
+
+       
+
+
+  </div>
+  <!-- End of header -->
+
+  <!-- start of the content. Dynamically load your component here with footer navigation -->
+ 
+    <div class = "intro">
+     <p style="color:#0C124E" font-family="Verdana"> <b>Customer Details</b> </p>
+    </div>
+<div class="form">
+    <form>
+      
+  
+            <input type="firstname" id="firstname" name="firstname" placeholder="First Name" style="width: 95%;"><br><br>
+            
+
+            <input type="lastname" id="lastname" name="lastname" placeholder="Last Name" style="width: 95%;"><br><br>
+           
+<div class = con1>
+    <div class = con1_1>
+            <input type="streetname" id="streetname" name="streetname" placeholder="Street Name" style="width: 70%;">
+        </div>
+        <div class = con1_2>  
+
+            <input type="streetnumber" id="streetnumber" name="streetname" placeholder="Street Number" style="width: 70%;">
+        </div>
+        </div>
+        <div class = con2>
+            <input type="city" id="city" name="city" placeholder="City" style="width: 95%; "><br><br>
+
+
+            <input type="zip" id="zip" name="zip" placeholder="Zip/Postal" style="width: 95%;" ><br><br>
+        </div>
+
+            <input type="emailaddress" id="emailaddress" name="emailaddress" placeholder="Email Address" style="width: 95%; "><br><br>
+            
+
+            <input type="telephone" id="telephone" name="telephone" placeholder="Telephone Number" style="width: 95%;"><br>
+           
+<div class="btn-continue">
+            <input type="submit" value="Continue">
+        </div>
+          
+    </form>
+</div>
+    <!-- End of content -->
+
+  <!-- start of the footer section -->
+  <nav class="nav">
+
+
+<a href="#" class="nav__link">
+    <i class="material-icons nav_icon">home</i>
+    <span class="nav__text"></span>
+</a>
+
+<a href="#" class="nav__link nav__link--active">
+    <i class="material-icons nav_icon">shopping_cart</i>
+    <span class="nav__text"></span>
+</a>
+
+<a href="#" class="nav__link">
+    <i class="material-icons nav_icon">person</i>
+    <span class="nav__text"></span>
+</a>
+  </nav>
+<!-- End of footer -->
+
+</body>
+
+
+
+</html>

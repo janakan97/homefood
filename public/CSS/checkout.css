@@ -1,0 +1,36 @@
+.form{
+    text-align:center;
+}
+.con1_1{
+    float:left;
+    position : relative;
+
+    
+}
+.con1_2{
+    float:right;
+    position : relative;
+
+}
+
+#name {
+    width: 223.67px;
+    height: 40.25px;
+}
+.con1 {
+    display: inline-block;
+}
+.btn-continue{
+    background-color:#F2971A;
+  
+   border: none;
+ color: black; 
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block; 
+  margin: 4px 2px;
+  cursor: pointer; 
+  border-radius: 14px;
+}
+

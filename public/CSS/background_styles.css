@@ -325,14 +325,6 @@ align-items: center;
     background-color: #FAE2DB;
     margin-bottom: 10px;
 }
-.view-button{
- 
-    display: inline !important;
-    font-size: 20px !important;
-    background-color: #81ABBC !important;
-    color: #FFFFFF; 
-    font-weight: bold !important;
-}
 
 .comment-button{
     width: 5px;
