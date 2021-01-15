@@ -33,6 +33,13 @@
       
 
     </script> -->
+    <script>
+      $(document).on('click', '#payment-btn', function (e) {
+         window.location.href = 'https://home-food-7c8cc.web.app//Common_elements/payment.html';
+      });
+     
+    
+    </script>
 </head>
 <!-- End of head -->
 
@@ -117,7 +124,14 @@
             <input type="telephone" id="telephone" name="telephone" placeholder="Telephone Number" style="width: 95%;"><br>
            
 <div class="btn-continue">
-            <input type="submit" value="Continue">
+  <button style="width: 125px;
+  height: 45px;
+  color: #ffffff;
+  display: inline;
+  background-color: #81ABBC !important;
+  float: left;
+  position: relative;top: -25px;left: -15px;
+  margin-right: 5px;" id="payment-btn" ><input type="submit" value="Continue"></button>
         </div>
           
     </form>

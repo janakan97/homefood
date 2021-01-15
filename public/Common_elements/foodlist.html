@@ -8,15 +8,17 @@
     <!-- the three things that jQuery Mobile needs to work -->
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    
-    <link rel="stylesheet" href="../CSS/button_styles.css" />
-    <link rel="stylesheet" href="../CSS/background_styles.css" />
-    <link rel="stylesheet" href="../CSS/progressbar.css">
-    <link rel="stylesheet" href="../themes/blue_test.css" />
+    <link rel="stylesheet" href="https://home-food-7c8cc.web.app/CSS/button_styles.css" />
+    <link rel="stylesheet" href="https://home-food-7c8cc.web.app/CSS/background_styles.css" />
+    <link rel="stylesheet" href="https://home-food-7c8cc.web.app/CSS/progressbar.css">
+    <link rel="stylesheet" href="https://home-food-7c8cc.web.app/CSS/foodmakers.css">
+    <link rel="stylesheet" href="https://home-food-7c8cc.web.app/CSS/footer.css">
+    <link rel="stylesheet" href="https://home-food-7c8cc.web.app/themes/blue_test.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-   
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <script>
       $(document).ready(function() {
         $('a').click(function(e) {
@@ -33,7 +35,7 @@
        window.location.href = 'https://home-food-7c8cc.web.app//Common_elements/comments.html';
     });
     $(document).on('click', '#addtoCart-btn', function (e) {
-       window.location.href = 'https://home-food-7c8cc.web.app//Common_elements/addtoCart.html';
+       window.location.href = 'https://home-food-7c8cc.web.app//Common_elements/cart.html';
     });
   
   </script>
@@ -108,8 +110,8 @@
     position: relative;top: -25px;left: -15px;
     margin-right: 5px;"  id="comment-btn" ><div style="font-size: 16px;color:#ffffff;">Comments</button>
   </div>
-
-  <div style="position: relative;top: -105px;left: 200px;width: 125px;">
+  <p style="display: inline; font-weight: bold;position: relative;top: 50px;left: -100px;font-size: 16px;color:#ffffff" class="poi_text"> Price : Rs1500</p>
+  <div style="position: relative;top: 20px;left: 200px;width: 125px;">
     <button style="width: 125px;
     height: 45px;
     color: #ffffff;
@@ -125,26 +127,25 @@
   <!--End of POI 1-->
   
 
-<!-- start of the footer section -->
-<nav class="nav">
+  <nav class="nav">
 
 
-  <a href="#" class="nav__link">
-      <i class="material-icons nav_icon">home</i>
-      <span class="nav__text"></span>
-  </a>
-  
-  <a href="#" class="nav__link nav__link--active">
-      <i class="material-icons nav_icon">shopping_cart</i>
-      <span class="nav__text"></span>
-  </a>
-  
-  <a href="#" class="nav__link">
-      <i class="material-icons nav_icon">person</i>
-      <span class="nav__text"></span>
-  </a>
-    </nav>
-  <!-- End of footer -->
+    <a href="#" class="nav__link">
+        <i class="material-icons nav_icon">home</i>
+        <span class="nav__text"></span>
+    </a>
+    
+    <a href="#" class="nav__link nav__link--active">
+        <i class="material-icons nav_icon">shopping_cart</i>
+        <span class="nav__text"></span>
+    </a>
+    
+    <a href="#" class="nav__link">
+        <i class="material-icons nav_icon">person</i>
+        <span class="nav__text"></span>
+    </a>
+      </nav>
+    <!-- End of footer -->
 
 </body>
 </html>

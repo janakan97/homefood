@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../CSS/checkout.css">
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../CSS/payment.css">
+    <link rel="stylesheet" href="../CSS/cart.css">
     <link rel="stylesheet" href="../themes/blue_test.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -35,6 +36,13 @@
       
 
     </script> -->
+    <script>
+      $(document).on('click', '#checkout-btn', function (e) {
+         window.location.href = 'https://home-food-7c8cc.web.app//Common_elements/checkout.html';
+      });
+     
+    
+    </script>
 </head>
 <!-- End of head -->
 
@@ -44,11 +52,11 @@
   <div class="header"  >
       <!-- <a data-rel="back" class="ui-btn ui-icon-arrow-l ui-btn-icon-left"> </a> -->
       <div class="heading">
-      <h1 id="headerText" style="color:white" text-align="center"><b>Profile </b></h1>
+      <h1 id="headerText" style="color:white" text-align="center"><b>Cart </b></h1>
     </div>
 
       <div class = logo>
-        <img id="logo" src="../images/dog_bath.png" alt="logo.png" width="75" height="75" title="Mystery"/>
+        <img id="logo" src="../images/logo.png" alt="logo.png" width="75" height="75" title="Mystery"/>
       </div>
 
 
@@ -86,86 +94,104 @@
   <!-- start of the content. Dynamically load your component here with footer navigation -->
  
     <div >
-     <p style="color:#0C124E" font-family="Verdana"> <b>Personal Information</b> </p>
-     
-    
-     
-   
-     <table>
-        <tr>
-          <td>Anne</th>
-          <td rowspan="2">Perera</th>  
-        </tr>
-       
-        <tr>
-          <td>anneperera@gmail.com</td>
-          <td>13,School Lane, Col - 12.</td>
-          <td>0770093402</td>
-        </tr>
-      
-      
-        
-      </table>
-</p>
-      <hr>
-      <p style="color:#0C124E" font-family="Verdana"> <b>Favourites</b> </p>
-
-      <div >
-        <form action="mailto:someone@example.com" method="post" enctype="text/plain">
         <table>
 
             <tr>
              
-              <td rowspan="3 "><img id="logo" src="../images/sarah.jpeg" alt="logo.png" width="75" height="75" title="Mystery"/></td>
-             
-              <td >
+              <td rowspan="3 "><img id="logo" src="../images/cheese.jpg" alt="logo.png" width="75" height="75" title="Mystery"/></td>
+              <td>Cheese Pizza</td>
+              <td colspan="3">
                   <div class="butn-remove">
-                <input type="submit" value="Email">
+                <input type="submit" value="Remove">
             </div>
         </td>
             </tr>
             <tr>
-              <td> <div class="butn-remove">
-                <input type="button" value="Delete">
-            </div></td>
-             
+              <td>Quantity</td>
+              <td>
+
+               <td><i class="material-icons nav_icon">remove_circle_outline </i></td> 
+               <div id="quantity1">
+                <td>1</td>
+            </div>
             
+               <td> <i class="material-icons nav_icon">add_circle_outline</i></td>
+              </td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>Rs.1500</td>
+              </tr>
           </table>
-       </form>
+
           <hr>
-          <form action="mailto:someone@example.com" method="post" enctype="text/plain">
           <table>
 
             <tr>
              
-              <td rowspan="3 "><img id="logo" src="../images/chefnextdoor.jpeg" alt="logo.png" width="75" height="75" title="Mystery"/></td>
-             
-              <td >
+              <td rowspan="3 "><img id="logo" src="../images/tandoori.jpeg" alt="logo.png" width="75" height="75" title="Mystery"/></td>
+              <td>Tandoori Pizza</td>
+              <td colspan="3">
                   <div class="butn-remove">
-                <input type="submit" value="Email">
+                <input type="submit" value="Remove">
             </div>
         </td>
             </tr>
+
+
+
             <tr>
-              <td> <div class="butn-remove">
-                <input type="button" value="Delete">
-            </div></td>
-             
-            
+              <td>Quantity</td>
+              <td>
+
+               <td><i class="material-icons nav_icon" onclick="mylessFunction()">remove_circle_outline </i></td> 
+               <div id="quantity2">
+                <td>1</td>
+            </div>
+               <td> <i class="material-icons nav_icon" onclick="myaddFunction()">add_circle_outline</i></td>
+              </td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>Rs.1800</td>
+              </tr>
           </table>
-          </form>
-      </div>
-      <div class="btn-submit">
-        <input type="submit"  value="Submit" onclick="myFunction()">
-    </div>
-    </div>
+
+          <hr>
+
+          <p> Total Amount Rs 3300</p>
+          <div class="butn-remove">
+            <button style="width: 125px;
+            height: 45px;
+            color: #ffffff;
+            display: inline;
+            background-color: #81ABBC !important;
+            float: left;
+            position: relative;top: -25px;left: -15px;
+            margin-right: 5px;" id="checkout-btn" ><input type="submit" value="Checkout"></button>
+        </div> 
+
+</div>
     
-      
-    <script>
-        function myFunction() {
-          alert("Congratulations! Payment Succeeded");
-        }
-        </script>
+     <script>
+function mylessFunction() {
+  document.getElementById("quantity1").value = 0;
+}
+
+function myaddFunction() {
+  document.getElementById("quantity1").value = 2;
+}
+
+function mylessFunction() {
+  document.getElementById("quantity2").value = 0;
+}
+
+function myaddFunction() {
+  document.getElementById("quantity2").value = 2;
+}
+
+</script> 
+   
     <!-- End of content -->
 
   <!-- start of the footer section -->
