@@ -1,8 +1,8 @@
 .btn-heart{
-    font-family: Segoe UI Symbol;
+    /*font-family: Segoe UI Symbol;*/
     font-size: 48px;
     width: 1%;
-    height: 1px;
+    height: -10px;
 }
 
 .view-button{
@@ -10,7 +10,7 @@
     display: inline !important;
     font-size: 20px !important;
     background-color: #81ABBC !important;
-    color: #FFFFFF; !important; 
+    
     font-weight: bold !important;
 }
 
